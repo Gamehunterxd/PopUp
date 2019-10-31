@@ -15,10 +15,7 @@ function styles() {
             .pipe(sourcemaps.write("."))
             .pipe(gulp.dest("css"))
     );
-
-
 }
-
 function js() {
     return(
         gulp.src(["js/*.js", "!js/*min.js"])
@@ -27,15 +24,12 @@ function js() {
             .pipe(gulp.dest("js"))
     );
 }
-
 function watch(){
     gulp.watch("css/*.scss" , styles);
     gulp.watch(["js/*.js", "!js/*min.js"], js);
 }
 
 const build = gulp.parallel(styles, js);
-
-
 
 exports.styles = styles;
 exports.js = js;
