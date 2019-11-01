@@ -13,3 +13,33 @@ $secondaryLight: #7DA1C2;
 
 /* Styling */
 
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  img{
+    max-width: 100%;
+  }
+
+  .landing{
+
+  }
+
+  .what{
+
+  }
+
+  .who{
+
+  }
+
+  .contact{
+
+  }
+}
