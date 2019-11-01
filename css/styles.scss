@@ -5,6 +5,10 @@ $dark: #212324;
 $primaryLight: #FFB235;
 $secondaryLight: #7DA1C2;
 
+/* Mixins */
+@mixin anchorLeft{
+  text-align: left;
+}
 
 
 /* Bootstrap import */
@@ -22,13 +26,32 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+
   img{
     max-width: 100%;
   }
 
-  .landing{
+  p{
+    text-align: left;
+  }
 
+  .container-fluid{
+    padding: 0;
+  }
+
+  .landing{
+    @include anchorLeft;
+    background-image: url("../images/bright-color-design-1161547 (1).jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30vh;
+    min-width: 95vw;
+    margin-bottom: 1rem;
+
+    &__img{
+      width: 40%;
+      margin: 0.5rem;
+    }
   }
 
   .what{
